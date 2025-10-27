@@ -1,5 +1,5 @@
 body {
-  background-image: url('assets/faculty/college.png');
+  
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -43,3 +43,4 @@ td img {
   height: 60px;
   border-radius: 50%;
 }
+
