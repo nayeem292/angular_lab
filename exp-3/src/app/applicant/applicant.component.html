@@ -1,0 +1,25 @@
+<div class="form-container">
+  <img src="assets/Application.png" alt="Application" class="avatar">
+  <h3>JOB APPLICATION FORM</h3>
+
+  <form *ngIf="!submitted" (ngSubmit)="registerApplicant()">
+    <input type="text" placeholder="Full Name" [(ngModel)]="fullName" name="fullName" required>
+    <input type="text" placeholder="Position" [(ngModel)]="position" name="position" required>
+    <input type="text" placeholder="Experience" [(ngModel)]="experience" name="experience" required>
+    <input type="text" placeholder="Department" [(ngModel)]="department" name="department" required>
+    <input type="text" placeholder="Location" [(ngModel)]="location" name="location" required>
+    <input type="text" placeholder="Contact" [(ngModel)]="contact" name="contact" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div *ngIf="submitted">
+    <h4>Application Submitted!</h4>
+    <p><strong>Name:</strong> {{fullName}}</p>
+    <p><strong>Position:</strong> {{position}}</p>
+    <p><strong>Experience:</strong> {{experience}}</p>
+    <p><strong>Department:</strong> {{department}}</p>
+    <p><strong>Location:</strong> {{location}}</p>
+    <p><strong>Contact:</strong> {{contact}}</p>
+    <button (click)="goBack.emit()">Back to Home</button>
+  </div>
+</div>
