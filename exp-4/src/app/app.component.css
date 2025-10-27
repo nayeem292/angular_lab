@@ -1,0 +1,31 @@
+/* app.component.css */
+
+nav {
+  background-color: #1976d2;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+main {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+ 
