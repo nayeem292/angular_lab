@@ -1,0 +1,27 @@
+.tp-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f5f5f5;
+}
+
+.tp-section {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 150px;
+  padding-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+mat-sidenav {
+  background-color: #1976d2;
+  color: white;
+}
+
+mat-sidenav-content {
+  padding: 20px;
+}
